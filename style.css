@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Poppins' , sans-serif;
+   
+}
+body {
+    background: #000;
+}
+header {
+    background: rgb(0, 0, 0);
+    color: white;
+    height: auto;
+   
+}
+.container-top {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    
+}
+.container-top h2 {
+    color: #8FC1E3;
+}
+.nav-menu ul  {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+.nav-menu ul li {
+    padding: 8px 12px;
+  
+}
+.header-ul li {
+    margin-right: 2rem;
+}
+.nav-menu ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #8FC1E3;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+.nav-menu ul li:hover::after {
+    width: 100%;
+}
+.content {
+    width: 1200px;
+    
+    height: 550px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    
+}
+.content-text {
+
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+.hello {
+    font-size: 14px;
+    font-weight: 600;   
+    letter-spacing: 3px;
+    color: #8FC1E3;
+    margin-bottom: 1.5rem;
+}
+.text {
+    line-height: 1.2;
+    font-weight: 800;
+    color: rgb(227, 222, 222);
+    font-size: 30px;
+}
+.text h1 span {
+    color: #8FC1E3;
+}
+.text h1 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.animated-text {
+    font-size: 30px;
+    margin-bottom: 2rem;
+    color: rgb(227, 222, 222);
+}
+.animated-text span {
+    position: relative;
+
+}
+.animated-text span::before {
+    content: "Gamer";
+    color: #8FC1E3;
+    animation: words 20s infinite;
+}
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background: black;
+    border-left: 2px solid #8FC1E3;
+    right: -8px;
+    animation: cursor .8s infinite , typing 20s steps(14) infinite;
+
+}
+@keyframes cursor {
+    to {
+        border-left: 2px solid #8FC1E3;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Gamer";
+    }
+    21%,40%{
+        content: "Handsome";
+    }
+    41%,60%{
+        content: "Genius";
+    }
+    61%,80%{
+        content: "Hacker";
+    }
+    81%,100%{
+        content: "Worthy";
+    }
+}
+@keyframes typing {
+    10%,15%,30%,35%,50%,70%,75%,90%,95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: calc(100% + 8px);
+    }
+}
+.hire-me , .works{
+    background: #8FC1E3;
+    border-radius: 40px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 16px 24px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    
+}
+.works {
+    background: transparent;
+    border-radius: 40px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 16px 24px;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(227, 222, 222);
+    border: 1px solid white;
+}
+.hire-me {
+    margin-right: 1rem;
+}
+.works:hover {
+    background: #8FC1E3;
+    border: none;
+    color: black;
+}
+.cob {
+    position: relative;
+    left: 52%;  
+    height: 500px;
+    top: -5%;
+    border-radius: 500px;
+}
+.haha {
+    height: 88vh;
+}
