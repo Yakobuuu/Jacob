@@ -171,9 +171,9 @@ header {
     margin-right: 1rem;
 }
 .works:hover {
-    background: #8FC1E3;
-    border: none;
-    color: black;
+    border: 1px solid #8FC1E3;
+    
+    color: #8FC1E3;
 }
 .cob {
     position: relative;
